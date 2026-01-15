@@ -2,9 +2,9 @@ import express from "express";
 
 const router = express.Router();
 
-import {RegisterUserController} from "../controllers/RegisterUserController.js";
+import {RouterController} from "../controllers/index.js";
 
 // ==================== ROTAS DE USUÁRIO ====================
-router.post("/auth/register" , RegisterUserController);
+router.post("/auth/register" , RouterController.RegisterUserController);
 
 export default router;
